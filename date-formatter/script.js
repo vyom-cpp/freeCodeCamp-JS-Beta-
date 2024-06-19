@@ -17,5 +17,34 @@ console.log(hours); // Output: 18 (It is currently 18:57 pm)
 const minutes = date.getMinutes(); // It returns the current on going minutes. Returns the number between 0 to 59.
 console.log(minutes); // Output: 5 (19:05 pm)
 
-const formattedDate = `${day}`;
-console.log(formattedDate);
+const formattedDate = `${day}-${month}-${year}`;
+console.log(formattedDate); // 19-6-24
+
+currentDateParagraph.textContent = formattedDate;
+
+const exampleSentence = "selur pmaCedoCeerf".split("").reverse(); // The split() method is used to divide a string into substrings based on a specified separator. It then returns these substrings as elements of an array. The reverse() method is used to reverse the string
+console.log(exampleSentence); // [ 'f',
+// 'r',
+// 'e',
+// 'e',
+// 'C',
+// 'o',
+// 'd',
+// 'e',
+// 'C',
+// 'a',
+// 'm',
+// 'p',
+// ' ',
+// 'r',
+// 'u',
+// 'l',
+// 'e',
+// 's' ]
+
+dateOptionsSelectElement.addEventListener("change", () => {
+  // In JavaScript, the change event is used to detect when the value of an HTML element has changed
+  switch (dateOptionsSelectElement.value) {
+    case 'yyyy-mm-dd': currentDateParagraph.textContent = formattedDate;
+  }
+});
