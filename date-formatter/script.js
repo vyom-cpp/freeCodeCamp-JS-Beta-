@@ -23,24 +23,7 @@ console.log(formattedDate); // 19-6-24
 currentDateParagraph.textContent = formattedDate;
 
 const exampleSentence = "selur pmaCedoCeerf".split("").reverse(); // The split() method is used to divide a string into substrings based on a specified separator. It then returns these substrings as elements of an array. The reverse() method is used to reverse the string
-console.log(exampleSentence); // [ 'f',
-// 'r',
-// 'e',
-// 'e',
-// 'C',
-// 'o',
-// 'd',
-// 'e',
-// 'C',
-// 'a',
-// 'm',
-// 'p',
-// ' ',
-// 'r',
-// 'u',
-// 'l',
-// 'e',
-// 's' ]
+console.log(exampleSentence); 
 
 dateOptionsSelectElement.addEventListener("change", () => {
   // In JavaScript, the change event is used to detect when the value of an HTML element has changed
